@@ -1,0 +1,27 @@
+.bannerImg{
+    position: relative;
+    width: 100%;
+    background: url("src/assets/images/foodie.webp") center center /cover no-repeat fixed;
+    height: 85vh;
+    color: #fffafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bannerImg::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #fffafa;
+    mask-image: url("src\\assets\\images\\divider_1_1920X_36751325-7c7a-4790-bcd2-7080582c6ca6.webp");
+    mask-position: bottom;
+    mask-size: cover;
+    -webkit-mask-position: bottom;
+    -webkit-mask-size: cover;
+    left: 0;
+    bottom: -15px;
+    transform: rotate(180deg);
+    z-index: 900;
+}
+
