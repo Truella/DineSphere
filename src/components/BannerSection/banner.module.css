@@ -1,7 +1,7 @@
 .bannerImg{
     position: relative;
     width: 100%;
-    background: url("src/assets/images/foodie.webp") center center /cover no-repeat fixed;
+    background: url("./src/assets/images/foodie.webp") center center /cover no-repeat fixed;
     height: 85vh;
     color: #fffafa;
     display: flex;
