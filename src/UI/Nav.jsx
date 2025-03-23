@@ -3,7 +3,7 @@ import NavLink from "./Link";
 
 export default function Nav({navIsOpen}) {
   const navLinks = [
-    { id: 1, value: "Home", path: "./" },
+    { id: 1, value: "Home", path: "/" },
     { id: 2, value: "Menu", path: "./menu" },
     { id: 3, value: "Order Online", path: "./order-online" },
     { id: 4, value: "Make a Reservation", path: "./reservation" },
