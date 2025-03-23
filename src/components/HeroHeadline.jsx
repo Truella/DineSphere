@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 export default function HeroHeadline() {
   return (
-    <div className="w-[90%] min-h-[150px] ml-20 ">
+    <div className="w-[90%] min-h-[150px] md:ml-20 ">
       {" "}
       <h1 className="font-bold text-5xl md:text-7xl">
         Welcome to{" "}
