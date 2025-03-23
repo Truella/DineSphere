@@ -10,9 +10,9 @@ export default function App() {
   return (
     <div>
       <Header />
-      <Routes basename={"DineSphere"}>
+      <Routes>
         <Route path="/" element={<Homepage />}></Route>
-        <Route path="/menu" element={<Menupage/>}></Route>{" "}
+        <Route path="/menu" element={<Menupage />}></Route>{" "}
         <Route path="/reservation" element={<MakeReservationPage />}></Route>{" "}
         <Route path="/order-online" element={<OrderOnlinePage />}></Route>
       </Routes>
