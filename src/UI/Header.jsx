@@ -8,7 +8,7 @@ export default function Header() {
     setNavIsOpen((prev) => !prev);
   };
   return (
-    <header className="md:flex md:justify-between md:items-center w-[100%] border">
+    <header className="md:flex md:justify-between md:items-center w-[100%] sticky top-0 left-0 z-[500] bg-white">
       <div className=" flex justify-between items-center p-4">
         <Logo />
         <div className="md:hidden" onClick={toggleNavState}>

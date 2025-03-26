@@ -2,7 +2,7 @@ import React from "react";
 
 export default function WhyUs() {
   return (
-    <div className=" my-8 w-[80%] m-auto">
+    <div className=" my-8 w-[90vw] md:w-[80vw] m-auto">
       {" "}
       <h2 className="font-[600] text-3xl mb-5">What makes us special</h2>
       <ul className="flex justify-between items-center flex-col md:flex-row">

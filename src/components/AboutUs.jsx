@@ -4,7 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import { motion } from "framer-motion";
 export default function AboutUs() {
   return (
-    <section className="p-5 md:flex md:justify-between md:items-center">
+    <section className="p-5 md:flex md:justify-between md:items-center md:w-[80vw] mx-auto my-10 md:p-0 ">
       <AboutVideo />
 
       {/* Right Side - Content */}

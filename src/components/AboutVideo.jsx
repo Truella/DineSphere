@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function AboutVideo() {
   return (
-    <div className='mt-5 md:w-1/2 md:p-6'><div
+    <div className='mt-5 md:w-[40%] '><div
     style={{
       height: 0,
       paddingBottom: "calc(56.25%)",
