@@ -64,8 +64,8 @@ export default function QuickPicks() {
     setCurrFeaturedMeal(meals);
   };
   return (
-    <section className="w-[90vw] md:w-[80vw] mx-auto my-10 ">
-            <h2 className="font-[600] text-3xl mb-5">Explore Our Meals</h2>
+    <section className="w-[90vw] md:w-[80vw] mx-auto mt-12">
+            <h2 className="font-[600] text-2xl mb-4">Explore Our Meals</h2>
       <div className="border-b-2 mb-5">
         <button
           className="mr-7 font-[600]"
