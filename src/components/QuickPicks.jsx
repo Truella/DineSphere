@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import FeaturedMeals from "./FeaturedMeals";
 const fastFood = [
   {
     id: 1,
@@ -58,5 +59,38 @@ const cuisines = [
 ];
 
 export default function QuickPicks() {
-  return <div>QuickPicks</div>;
+  const [currFeaturedMeal, setCurrFeaturedMeal] = useState(cuisines);
+  const handleClick = (meals) => {
+    setCurrFeaturedMeal(meals);
+  };
+  return (
+    <section className="w-[90vw] md:w-[80vw] mx-auto mt-12">
+            <h2 className="font-[600] text-2xl mb-4">Explore Our Meals</h2>
+      <div className="border-b-2 mb-5">
+        <button
+          className="mr-7 font-[600]"
+          onClick={() => handleClick(cuisines)}
+        >
+          Cuisines
+        </button>
+        <button
+          className="mr-7 font-[600]"
+          onClick={() => handleClick(fastFood)}
+        >
+          Fast Food
+        </button>
+        <button
+          className="mr-7 font-[600]"
+          onClick={() => handleClick(bbqGrills)}
+        >
+          BBQ & Grills
+        </button>
+      </div>
+      <div className="flex overflow-x-scroll">
+        {currFeaturedMeal.map((meal) => (
+          <FeaturedMeals meal={meal} />
+        ))}
+      </div>
+    </section>
+  );
 }

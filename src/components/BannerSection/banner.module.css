@@ -1,8 +1,8 @@
 .bannerImg{
     position: relative;
     width: 100%;
-    background: url("./src/assets/images/foodie.webp") center center /cover no-repeat fixed;
-    height: 85vh;
+    background: url("src\\assets\\images\\foodie.webp") center center /cover no-repeat fixed;
+    height: 95vh;
     color: #fffafa;
     display: flex;
     justify-content: center;
@@ -22,6 +22,6 @@
     left: 0;
     bottom: -15px;
     transform: rotate(180deg);
-    z-index: 900;
+    z-index: 400;
 }
 

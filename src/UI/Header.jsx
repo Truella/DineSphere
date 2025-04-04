@@ -8,8 +8,8 @@ export default function Header() {
     setNavIsOpen((prev) => !prev);
   };
   return (
-    <header className="md:flex md:justify-between md:items-center w-[100%] border">
-      <div className=" flex justify-between items-center p-4">
+    <header className="md:flex md:justify-between md:items-center w-[100%] sticky top-0 left-0 z-[500] bg-white md:h-[10vh]">
+      <div className=" flex justify-between items-center p-4 md:w-[20vw]">
         <Logo />
         <div className="md:hidden" onClick={toggleNavState}>
           {!navIsOpen && <FaBarsStaggered />}

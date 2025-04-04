@@ -1,0 +1,19 @@
+.review {
+    min-width: 300px;
+    min-height: 250px;
+    max-width: 320px;
+  position: relative;
+  background: white;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  clip-path: polygon(0 0, 80% 0, 100% 30%, 100% 100%, 0 100%);
+}
+.review::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 1px solid #a855f7; /* Purple border */
+  border-radius: 8px;
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  pointer-events: none;
+}
