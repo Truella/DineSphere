@@ -7,8 +7,7 @@ export default function Nav({ navIsOpen }) {
     { id: 2, value: "Menu", path: "/menu" },
     { id: 3, value: "Order Online", path: "/order-online" },
     { id: 4, value: "Make a Reservation", path: "/reservation" },
-    { id: 5, value: "Contact Us", path: "/contact" },
-  ];
+    { id: 5, value: "Contact Us", path: "/contact" },  ];
   return (
     <nav
       className={`${
