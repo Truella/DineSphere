@@ -8,7 +8,7 @@ import img4 from "../assets/images/pexels-jonathanborba-2983101.jpg";
 export default function GalleryContainer() {
   return (
     <div
-      className={`${styles.gridContainer} w-[90vw] h-auto md:w-[450px] md:h-[450px]`}
+      className={`${styles.gridContainer} w-[90vw] h-auto md:w-[500px] md:h-[500px]`}
     >
       <div className={`${styles.gridItem} `}>
         <img className="w-[100%] h-[100%]" src={img1} />

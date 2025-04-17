@@ -5,7 +5,7 @@ export default function HeroHeadline() {
   return (
     <div className="w-auto">
       {" "}
-      <h1 className="font-bold text-3xl md:text-[64px] text-red-600">
+      <h1 className="font-bold text-3xl md:text-[64px] text-rich-red-primary">
         {" "}
         <Typewriter
           words={[

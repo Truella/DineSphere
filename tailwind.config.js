@@ -4,11 +4,11 @@ export default {
   theme: {
     extend: {
       colors: {
-        "rich-red-primary": "#D72638",
-        "deep-gold-secondary": "#F8C630",
+        "rich-red-primary": "#8B0A1A",
+        "deep-gold-secondary": "#FFD700",
         "forest-green": "#2E7D32",
-        "soft-cream": "FAF3E0",
-        "charcoal-black": "2B2B2B",
+        "soft-cream": "#FFFCF7",
+        "charcoal-black": "#2B2B2B",
       },
     },
   },

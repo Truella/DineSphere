@@ -65,8 +65,13 @@ export default function QuickPicks() {
   };
   return (
     <section className="w-[90vw] md:w-[80vw] mx-auto mt-12">
-            <h2 className="font-[600] text-2xl mb-4">Explore Our Meals</h2>
-      <div className="border-b-2 mb-5">
+      <h2
+        className="font-[600] text-2xl text-center mb-4 text-rich-red-primary"
+        style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }}
+      >
+        Explore Our Meals
+      </h2>
+      <div className="border-b-2 border-forest-green mb-5">
         <button
           className="mr-7 font-[600]"
           onClick={() => handleClick(cuisines)}

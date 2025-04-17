@@ -30,19 +30,28 @@ export default function ReviewsContainer() {
   ];
 
   return (
-    <section className="mt-12 border-black md:w-[80vw] m-auto">
-      <div>
-        <h2>TESTIMONIALS</h2>
-        <h2>What Our Customers Say</h2>
-      </div>
+    <section className="my-12 md:w-[80vw] w-[100%] m-auto text-center rounded-md shadow-sm">
+  <div>
+    <h2 className="font-semibold text-forest-green">TESTIMONIALS</h2>
+    <h2
+      className="font-[600] text-2xl mb-4 text-rich-red-primary"
+      style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }}
+    >
+      What Our Customers Say
+    </h2>
+  </div>
 
-      <div className="flex justify-between items-center">
-        {" "}
-        {reviews.map((review) => (
-          <Review review={review} />
-        ))}
-      </div>
-      <div><button>View More</button></div>
-    </section>
+  <div className="flex justify-center md:justify-between flex-wrap mt-12">
+    {reviews.map((review) => (
+      <Review key={review.id} review={review} />
+    ))}
+  </div>
+
+  <div className="">
+    <button className="bg-rich-red-primary text-white px-6 py-2 rounded-md shadow-md hover:bg-red-800 transition">
+      View More
+    </button>
+  </div>
+</section>
   );
 }

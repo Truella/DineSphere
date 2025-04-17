@@ -1,7 +1,7 @@
 import React from "react";
 export default function Footer() {
   return (
-    <footer className="w-full py-8 border-t">
+    <footer className="w-full py-8 border-t bg-charcoal-black">
       <div className="w-[90vw] md:w-[80vw] mx-auto  grid md:grid-cols-3 gap-6">
         {/* Logo & About */}
         <div className="space-y-4">
