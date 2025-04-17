@@ -2,10 +2,15 @@ import React from "react";
 
 export default function AboutText() {
   return (
-    <div className="md:w-[50%] md:pr-2">
+    <div className="md:w-[40%]">
       <div>
-        <h2 className="font-bold text-4xl mb-5">Our Story</h2>
-        <p className="leading-relaxed">
+        <h2
+          className="font-[600] text-2xl mb-4 text-rich-red-primary"
+          style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }}
+        >
+          Our Story
+        </h2>
+        <p className="leading-relaxed text-[#4A4A4A]">
           Founded in 2012, our journey began with a simple goal—to create a
           space where everyone feels at home while enjoying exceptional food
           made with the freshest ingredients. Over the years, we’ve expanded to
@@ -25,11 +30,17 @@ export default function AboutText() {
         </p>
       </div>
 
-      <div className="flex justify-between py-3 mt-4">
-        <a href="/menu" className="p-2 rounded-md bg-red-600 text-white font-bold">
+      <div className="flex justify-between py-3 mt-8">
+        <a
+          href="/menu"
+          className="p-2 rounded-md bg-rich-red-primary text-soft-cream font-[500] shadow-md shadow-[#8B0A1A]/35 hover:shadow-lg hover:shadow-[#8B0A1A]/40 transition duration-3"
+        >
           Explore Menu
         </a>
-        <a href="/reservations" className=" p-2 rounded-md bg-red-600 text-white font-bold">
+        <a
+          href="/reservations"
+          className=" p-2 rounded-md bg-rich-red-primary text-soft-cream font-[500] shadow-md shadow-[#8B0A1A]/35 hover:shadow-lg hover:shadow-[#8B0A1A]/40 transition duration-3"
+        >
           Book a Table
         </a>
       </div>

@@ -9,9 +9,10 @@ export default function Homepage() {
     <div>
       <Banner />
       <AboutUs />
-      <WhyUs/>
-      <QuickPicks/>
-      <ReviewsContainer/>
+      <WhyUs />
+      <QuickPicks />
+        {" "}
+        <ReviewsContainer />
     </div>
   );
 }
