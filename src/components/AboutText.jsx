@@ -2,10 +2,10 @@ import React from "react";
 
 export default function AboutText() {
   return (
-    <div className="md:w-[40%]">
+    <div className="md:w-[40%] mt-12 md:mt-0">
       <div>
         <h2
-          className="font-[600] text-2xl mb-4 text-rich-red-primary"
+          className="font-[600] text-2xl mb-2 text-rich-red-primary text-center"
           style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }}
         >
           Our Story

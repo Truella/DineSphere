@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./galleryContainer.module.css";
-import img1 from "../assets/images/pexels-ton-nattapong-132623970-10939223.jpg";
-import img2 from "../assets/images/imagesLg/brooke-lark--F_5g8EEHYE-unsplash (1).jpg";
-import img3 from "../assets/images/pexels-willpicturethis-2641886.jpg";
-import img4 from "../assets/images/pexels-jonathanborba-2983101.jpg";
+import img1 from "../assets/images/img1.jpg";
+import img2 from "/images/bolognese.jpg";
+import img3 from "../assets/images/img3.jpg";
+import img4 from "/images/Burger.jpg";
 
 export default function GalleryContainer() {
   return (

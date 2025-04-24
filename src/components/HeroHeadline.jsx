@@ -5,14 +5,10 @@ export default function HeroHeadline() {
   return (
     <div className="w-auto">
       {" "}
-      <h1 className="font-bold text-3xl md:text-[64px] text-rich-red-primary">
+      <h1 className="font-bold text-[40px] md:text-[64px] text-rich-red-primary leading-none">
         {" "}
         <Typewriter
-          words={[
-            " The DineSphere!",
-            "A Taste of Perfection",
-            "Your Food Haven",
-          ]}
+          words={["The DineSphere!", "Your Food Haven", "The Flavour Hub"]}
           loop
           cursor
           cursorStyle="_"

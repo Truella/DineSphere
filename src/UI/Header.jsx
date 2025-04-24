@@ -12,8 +12,8 @@ export default function Header() {
       <div className=" flex justify-between items-center p-4 md:w-[20vw]">
         <Logo />
         <div className="md:hidden" onClick={toggleNavState}>
-          {!navIsOpen && <FaBarsStaggered />}
-          {navIsOpen && <FaX />}
+          {!navIsOpen && <FaBarsStaggered size={'32px'}/>}
+          {navIsOpen && <FaX size={'32px'}/>}
         </div>
       </div>
       <Nav navIsOpen={navIsOpen} />
