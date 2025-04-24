@@ -44,7 +44,7 @@ export default function WhyUs() {
       </h2>
       <div className="grid gap-8 text-center md:grid-cols-2 lg:grid-cols-4 w-[80vw] m-auto">
         {reasons.map((reason) => (
-          <div className="flex flex-col h-[150px] items-center rounded-lg p-2">
+          <div className="flex flex-col h-[150px] items-center rounded-lg p-2" key={reason.id}>
             <div className="flex justify-center">
               {reason.icon}
             </div>{" "}
