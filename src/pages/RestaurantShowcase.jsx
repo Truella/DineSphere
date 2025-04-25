@@ -1,26 +1,33 @@
 import React, { useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaCheck } from "react-icons/fa";
+import {
+  FaAngleLeft,
+  FaAngleRight,
+  FaCouch,
+  FaBolt,
+  FaUsers,
+  FaStar,
+} from "react-icons/fa";
 import { GiKnifeFork } from "react-icons/gi";
 
 const restaurantEnvironment = [
   {
     id: 1,
-    img: "/images/interior.jpg",
+    img: "images/interior.jpg",
     alt: "Spacious and cozy restaurant interior with warm lighting",
   },
   {
     id: 2,
-    img: "/images/restaurant_outdoor.jpg",
+    img: "images/indoor.jpg",
     alt: "Outdoor seating area with umbrella shades and greenery",
   },
   {
     id: 3,
-    img: "/images/dining_customers.jpg",
+    img: "images/indoor_view.jpg",
     alt: "Happy customers dining at a wooden table",
   },
   {
     id: 4,
-    img: "/images/restaurant_night.jpg",
+    img: "images/outdoor_view.jpg",
     alt: "Beautiful night view of the restaurant with glowing lights",
   },
 ];
@@ -41,45 +48,55 @@ export default function RestaurantShowcase() {
 
   return (
     <div className="w-[90%] md:w-[80%] mx-auto">
-      <h2
-        className="font-[600] text-2xl text-center text-rich-red-primary mb-1"
-        style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }}
-      >
-        <GiKnifeFork className="inline align-middle mr-2" />
-        Reserve Your Spot!
-      </h2>
-      <p className="text-center text-sm mb-8 text-gray-600">
-        Where Great Food Meets a Stunning Ambiance.
-      </p>
-
-      <div className="md:flex md:justify-between items-center gap-10 border">
+      <div className="md:flex md:justify-between items-start gap-10 ">
         {/* Left side - Description and Info */}
-        <div className="md:w-[45%] space-y-5 text-base text-gray-800">
-          <p>
-            Step into a cozy and vibrant atmosphere where great meals meet great
-            memories. Whether you're here for a quick bite or a slow evening,
-            we’ve got the perfect setting for every occasion.
+        <div className="md:w-[45%]  text-base text-gray-800">
+          <h2
+            className="font-[600] text-2xl  text-rich-red-primary mb-1"
+            style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }}
+          >
+            <GiKnifeFork className="inline align-middle mr-2" />
+            Reserve Your Spot!
+          </h2>
+          <p className=" text-sm mb-8 text-gray-600">
+            <i>Where Great Food Meets a Stunning Ambiance.</i>
           </p>
-
-          <ul className="space-y-2">
-            <li><FaCheck className="inline"/> Cozy indoor & outdoor seating.</li>
-            <li><FaCheck className="inline"/> Fast online reservations.</li>
-            <li><FaCheck className="inline"/> Perfect for family gatherings.</li>
-            <li><FaCheck className="inline"/> 5-star customer reviews.</li>
-          </ul>
-
-          <button className="mt-4 px-5 py-2 bg-rich-red-primary text-white rounded-full hover:bg-red-700 transition">
-            Book a Table
-          </button>
-
-          <div className="pt-4 border-t text-gray-600">
+          <div className="space-y-5">
             <p>
-              <strong>Opening Hours:</strong>
+              Step into a cozy and vibrant atmosphere where great meals meet
+              great memories. Whether you're here for a quick bite or a slow
+              evening, we’ve got the perfect setting for every occasion.
             </p>
-            <p>Mon–Sun: 11am – 10pm</p>
-            <p className="mt-1">
-              <strong>Call us:</strong> (555) 123-4567
-            </p>
+
+            <ul className="space-y-2">
+              <li>
+                <FaCouch size={"32px"}  className="inline text-rich-red-primary align-middle mr-2" />{" "}
+                Cozy indoor & outdoor seating.
+              </li>
+              <li>
+                <FaBolt size={"32px"} className="inline text-rich-red-primary align-middle mr-2" /> Fast online reservations.
+              </li>
+              <li>
+                <FaUsers size={"32px"} className="inline text-rich-red-primary align-middle mr-2" /> Perfect for family gatherings.
+              </li>
+              <li>
+                <FaStar size={"32px"} className="inline text-rich-red-primary align-middle mr-2" /> 5-star customer reviews.
+              </li>
+            </ul>
+
+            <button className="mt-4 px-5 py-2 bg-rich-red-primary text-white rounded-full hover:bg-red-700 transition">
+              Book a Table
+            </button>
+
+            <div className="pt-4 border-t text-gray-600">
+              <p>
+                <strong>Opening Hours:</strong>
+              </p>
+              <p>Mon–Sun: 11am – 10pm</p>
+              <p className="mt-1">
+                <strong>Call us:</strong> (555) 123-4567
+              </p>
+            </div>
           </div>
         </div>
 
@@ -87,7 +104,7 @@ export default function RestaurantShowcase() {
         <div className="relative w-full md:w-[50%] max-w-[450px] mt-8 md:mt-0">
           <div className="aspect-[3/4] overflow-hidden rounded-xl shadow-lg">
             <img
-              src={restaurantEnvironment[currIndex].img}
+              src={`${import.meta.env.BASE_URL}${restaurantEnvironment[currIndex].img}`}
               alt={restaurantEnvironment[currIndex].alt}
               className="w-full h-full object-cover transition-all duration-500"
             />
