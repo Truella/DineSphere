@@ -76,7 +76,7 @@ export default function QuickPicks() {
   );
   const [activeIndex, setActiveIndex] = useState(0);
   return (
-    <section className="w-[90vw] md:w-[80vw] mx-auto mt-12">
+    <section className="w-[90vw] md:w-[80vw] mx-auto mt-24">
       <h2
         className="font-[600] text-2xl text-center text-rich-red-primary"
         style={{ textShadow: "0 1px 4px rgba(0,0,0,0.1)" }} 

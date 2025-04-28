@@ -12,6 +12,7 @@ export default function Homepage() {
       <AboutUs />
       <WhyUs />
       <QuickPicks /> 
+      <div className="border-t mt-12"></div>
       <RestaurantShowcaseContainer />
       <ReviewsContainer />
     </div>

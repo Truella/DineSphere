@@ -11,7 +11,7 @@ export default function Banner() {
           To
         </h1>
         <HeroHeadline />
-        <div className="flex justify-between w-[80%] md:w-[25%] mt-8 md:mt-12">
+        <div className="flex justify-between w-[80%] md:w-[30%] mt-8 md:mt-12">
           <a
             href="/menu"
             className="p-2 w-[120px] text-center rounded-md border border-deep-gold-secondary font-[500] transition-all duration-300 hover:bg-rich-red-primary hover:border-rich-red-primary hover:text-soft-cream"

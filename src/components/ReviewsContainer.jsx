@@ -34,7 +34,7 @@ export default function ReviewsContainer() {
 
   return (
     <section
-      className="my-12 md:w-[80vw] w-[100%] m-auto text-center rounded-md shadow-sm p-8"
+      className="my-24 md:w-[80vw] w-[100%] m-auto text-center rounded-[10px] shadow-[0_4px_15px_rgba(0,0,0,0.05)] p-8"
       style={{ background: " #fbecec" }}
     >
       <div>

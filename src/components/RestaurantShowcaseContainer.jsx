@@ -1,5 +1,5 @@
 import React from "react";
-import RestaurantShowcase from "../pages/RestaurantShowcase";
+import RestaurantShowcase from "./RestaurantShowcase";
 
 export default function RestaurantShowcaseContainer() {
   return (
