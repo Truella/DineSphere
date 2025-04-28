@@ -10,16 +10,16 @@ export default function GalleryContainer() {
     <div
       className={`${styles.gridContainer} w-[90vw] h-auto md:w-[500px] md:h-[500px]`}
     >
-      <div className={`${styles.gridItem} `}>
+      <div className={`${styles.gridItem} rounded-md overflow-hidden shadow-md`}>
         <img className="w-[100%] h-[100%]" src={img1} />
       </div>
-      <div className={`${styles.tall}`}>
+      <div className={`${styles.tall} rounded-md overflow-hidden shadow-md`}>
         <img className="w-[100%] h-[100%]" src={img2} />
       </div>
-      <div className={`${styles.tall}`}>
+      <div className={`${styles.tall} rounded-md overflow-hidden shadow-md`}>
         <img className="w-[100%] h-[100%]" src={img3} />
       </div>
-      <div className={`${styles.gridItem} `}>
+      <div className={`${styles.gridItem} rounded-md overflow-hidden shadow-md`}>
         {" "}
         <img className="w-[100%] h-[100%]" src={img4} />
       </div>
